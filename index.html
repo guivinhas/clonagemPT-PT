@@ -100,6 +100,54 @@
   </script>
   <script defer="" src="https://botdevendas.click/wp-includes/js/wp-emoji-release.min.js?ver=6.7.2">
   </script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '4150857331860802');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=4150857331860802&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<!-- 👇 Script de rastreio de scroll -->
+<script>
+  window.addEventListener('scroll', function () {
+    const scrollTop = window.scrollY;
+    const docHeight = document.body.scrollHeight - window.innerHeight;
+    const scrollPercent = (scrollTop / docHeight) * 100;
+
+    if (scrollPercent >= 25 && !window.sent25) {
+      fbq('trackCustom', 'Scroll25');
+      window.sent25 = true;
+    }
+    if (scrollPercent >= 50 && !window.sent50) {
+      fbq('trackCustom', 'Scroll50');
+      window.sent50 = true;
+    }
+    if (scrollPercent >= 75 && !window.sent75) {
+      fbq('trackCustom', 'Scroll75');
+      window.sent75 = true;
+    }
+    if (scrollPercent >= 90 && !window.sent100) {
+      fbq('trackCustom', 'Scroll100');
+      window.sent100 = true;
+    }
+  });
+</script>
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
  </head>
  <body class="home page-template page-template-elementor_canvas page page-id-984 wp-embed-responsive hello-elementor-default elementor-default elementor-template-canvas elementor-kit-8 elementor-page elementor-page-984 e--ua-blink e--ua-edge e--ua-webkit" data-elementor-device-mode="mobile">
   <div class="elementor elementor-984" data-elementor-id="984" data-elementor-post-type="page" data-elementor-type="wp-page" data-rocket-location-hash="b4604185cc2f634a3edfa8055910ede8">
